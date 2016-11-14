@@ -1,0 +1,110 @@
+I, [2016-10-03T16:07:25.207868 #987]  INFO -- default-centos-72: -----> Creating <default-centos-72>...
+I, [2016-10-03T16:07:26.182118 #987]  INFO -- default-centos-72: No usable default provider could be found for your system.
+I, [2016-10-03T16:07:26.182196 #987]  INFO -- default-centos-72: 
+I, [2016-10-03T16:07:26.182230 #987]  INFO -- default-centos-72: Vagrant relies on interactions with 3rd party systems, known as
+I, [2016-10-03T16:07:26.182255 #987]  INFO -- default-centos-72: "providers", to provide Vagrant with resources to run development
+I, [2016-10-03T16:07:26.182280 #987]  INFO -- default-centos-72: environments. Examples are VirtualBox, VMware, Hyper-V.
+I, [2016-10-03T16:07:26.182305 #987]  INFO -- default-centos-72: 
+I, [2016-10-03T16:07:26.182330 #987]  INFO -- default-centos-72: The easiest solution to this message is to install VirtualBox, which
+I, [2016-10-03T16:07:26.182356 #987]  INFO -- default-centos-72: is available for free on all major platforms.
+I, [2016-10-03T16:07:26.182380 #987]  INFO -- default-centos-72: 
+I, [2016-10-03T16:07:26.182405 #987]  INFO -- default-centos-72: If you believe you already have a provider available, make sure it
+I, [2016-10-03T16:07:26.182431 #987]  INFO -- default-centos-72: is properly installed and configured. You can see more details about
+I, [2016-10-03T16:07:26.182468 #987]  INFO -- default-centos-72: why a particular provider isn't working by forcing usage with
+I, [2016-10-03T16:07:26.182486 #987]  INFO -- default-centos-72: `vagrant up --provider=PROVIDER`, which should give you a more specific
+I, [2016-10-03T16:07:26.182507 #987]  INFO -- default-centos-72: error message for that particular provider.
+E, [2016-10-03T16:07:26.432309 #987] ERROR -- default-centos-72: Create failed on instance <default-centos-72>.
+E, [2016-10-03T16:07:26.432433 #987] ERROR -- default-centos-72: ------Exception-------
+E, [2016-10-03T16:07:26.432452 #987] ERROR -- default-centos-72: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2016-10-03T16:07:26.432465 #987] ERROR -- default-centos-72: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: No usable default provider could be found for your system.
+
+Vagrant relies on interactions with 3rd party systems, known as
+"providers", to provide Vagrant with resources to run development
+environments. Examples are VirtualBox, VMware, Hyper-V.
+
+The easiest solution to this message is to install VirtualBox, which
+is available for free on all major platforms.
+
+If you believe you already have a provider available, make sure it
+is properly installed and configured. You can see more details about
+why a particular provider isn't working by forcing usage with
+`vagrant up --provider=PROVIDER`, which should give you a more specific
+error message for that particular provider.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2016-10-03T16:07:26.432478 #987] ERROR -- default-centos-72: ----------------------
+E, [2016-10-03T16:07:26.432490 #987] ERROR -- default-centos-72: ------Backtrace-------
+E, [2016-10-03T16:07:26.432501 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2016-10-03T16:07:26.432513 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2016-10-03T16:07:26.432526 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:343:in `run_command'
+E, [2016-10-03T16:07:26.432538 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:302:in `run'
+E, [2016-10-03T16:07:26.432592 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:373:in `run_vagrant_up'
+E, [2016-10-03T16:07:26.432614 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:96:in `create'
+E, [2016-10-03T16:07:26.432627 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `public_send'
+E, [2016-10-03T16:07:26.432639 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `block in perform_action'
+E, [2016-10-03T16:07:26.432650 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:517:in `block in synchronize_or_call'
+E, [2016-10-03T16:07:26.432662 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:515:in `synchronize'
+E, [2016-10-03T16:07:26.432673 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:515:in `synchronize_or_call'
+E, [2016-10-03T16:07:26.432684 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-10-03T16:07:26.432696 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-10-03T16:07:26.432708 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-10-03T16:07:26.432719 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `perform_action'
+E, [2016-10-03T16:07:26.432730 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:366:in `create_action'
+E, [2016-10-03T16:07:26.432741 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-10-03T16:07:26.432752 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-10-03T16:07:26.432763 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-10-03T16:07:26.432775 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:127:in `create'
+E, [2016-10-03T16:07:26.432786 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-10-03T16:07:26.432797 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-10-03T16:07:26.432809 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-10-03T16:07:26.432820 #987] ERROR -- default-centos-72: ----End Backtrace-----
+E, [2016-10-03T16:07:26.432831 #987] ERROR -- default-centos-72: ---Nested Exception---
+E, [2016-10-03T16:07:26.432842 #987] ERROR -- default-centos-72: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2016-10-03T16:07:26.432853 #987] ERROR -- default-centos-72: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: No usable default provider could be found for your system.
+
+Vagrant relies on interactions with 3rd party systems, known as
+"providers", to provide Vagrant with resources to run development
+environments. Examples are VirtualBox, VMware, Hyper-V.
+
+The easiest solution to this message is to install VirtualBox, which
+is available for free on all major platforms.
+
+If you believe you already have a provider available, make sure it
+is properly installed and configured. You can see more details about
+why a particular provider isn't working by forcing usage with
+`vagrant up --provider=PROVIDER`, which should give you a more specific
+error message for that particular provider.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2016-10-03T16:07:26.432870 #987] ERROR -- default-centos-72: ----------------------
+E, [2016-10-03T16:07:26.432882 #987] ERROR -- default-centos-72: ------Backtrace-------
+E, [2016-10-03T16:07:26.432893 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2016-10-03T16:07:26.432905 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2016-10-03T16:07:26.432916 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:343:in `run_command'
+E, [2016-10-03T16:07:26.432928 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:302:in `run'
+E, [2016-10-03T16:07:26.432939 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:373:in `run_vagrant_up'
+E, [2016-10-03T16:07:26.432950 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:96:in `create'
+E, [2016-10-03T16:07:26.432962 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `public_send'
+E, [2016-10-03T16:07:26.432972 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `block in perform_action'
+E, [2016-10-03T16:07:26.432992 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:517:in `block in synchronize_or_call'
+E, [2016-10-03T16:07:26.433004 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:515:in `synchronize'
+E, [2016-10-03T16:07:26.433015 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:515:in `synchronize_or_call'
+E, [2016-10-03T16:07:26.433025 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-10-03T16:07:26.433036 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-10-03T16:07:26.433047 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-10-03T16:07:26.433058 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `perform_action'
+E, [2016-10-03T16:07:26.433069 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:366:in `create_action'
+E, [2016-10-03T16:07:26.433079 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-10-03T16:07:26.433093 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-10-03T16:07:26.433105 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-10-03T16:07:26.433169 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:127:in `create'
+E, [2016-10-03T16:07:26.433186 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-10-03T16:07:26.433198 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-10-03T16:07:26.433209 #987] ERROR -- default-centos-72: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-10-03T16:07:26.433221 #987] ERROR -- default-centos-72: ----End Backtrace-----

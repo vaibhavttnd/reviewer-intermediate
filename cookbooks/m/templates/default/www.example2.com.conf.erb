@@ -1,0 +1,9 @@
+<VirtualHost *:8082>
+  ServerName <%= node['apache']['server_name']['vhost-example2'] %>
+  DocumentRoot  <%= node['apache']['docroot']['example2'] %>
+  # Possible values include: debug, info, notice, warn, error, crit, alert, emerg.
+  LogLevel warn
+  ErrorLog "<%= node['apache']['log_pipe'] %><%= node['apache']['log_dir'] %>/<%= node['apache']['error_log'] %><%= node['apache']['log_pipe_rotation'] %>"
+
+  CustomLog "<%= node['apache']['log_pipe'] %><%= node['apache']['log_dir'] %>/<%= node['apache']['access_log'] %><%= node['apache']['log_pipe_rotation'] %>" combined
+</VirtualHost>
