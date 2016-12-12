@@ -1,0 +1,30 @@
+I, [2016-12-12T15:41:23.296636 #2950]  INFO -- Kitchen: -----> Starting Kitchen (v1.13.2)
+E, [2016-12-12T15:41:23.296891 #2950] ERROR -- Kitchen: ------Exception-------
+E, [2016-12-12T15:41:23.296916 #2950] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2016-12-12T15:41:23.296930 #2950] ERROR -- Kitchen: Message: Kitchen YAML file /home/vaibhav/chef-inter/cookbooks/.kitchen.yml does not exist.
+E, [2016-12-12T15:41:23.296942 #2950] ERROR -- Kitchen: ----------------------
+E, [2016-12-12T15:41:23.296953 #2950] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-12-12T15:41:23.296964 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/loader/yaml.rb:74:in `read'
+E, [2016-12-12T15:41:23.296975 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/config.rb:154:in `data'
+E, [2016-12-12T15:41:23.296986 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/config.rb:133:in `suites'
+E, [2016-12-12T15:41:23.297007 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/config.rb:184:in `filter_instances'
+E, [2016-12-12T15:41:23.297020 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/config.rb:143:in `build_instances'
+E, [2016-12-12T15:41:23.297031 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/config.rb:119:in `instances'
+E, [2016-12-12T15:41:23.297042 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2016-12-12T15:41:23.297053 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2016-12-12T15:41:23.297064 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2016-12-12T15:41:23.297075 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-12-12T15:41:23.297086 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command/action.rb:37:in `call'
+E, [2016-12-12T15:41:23.297097 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:56:in `perform'
+E, [2016-12-12T15:41:23.297108 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:186:in `block (2 levels) in <class:CLI>'
+E, [2016-12-12T15:41:23.297119 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2016-12-12T15:41:23.297130 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2016-12-12T15:41:23.297141 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2016-12-12T15:41:23.297152 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2016-12-12T15:41:23.297162 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2016-12-12T15:41:23.297173 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/bin/kitchen:13:in `block in <top (required)>'
+E, [2016-12-12T15:41:23.297184 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/errors.rb:174:in `with_friendly_errors'
+E, [2016-12-12T15:41:23.297206 #2950] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/bin/kitchen:13:in `<top (required)>'
+E, [2016-12-12T15:41:23.297217 #2950] ERROR -- Kitchen: /usr/bin/kitchen:21:in `load'
+E, [2016-12-12T15:41:23.297227 #2950] ERROR -- Kitchen: /usr/bin/kitchen:21:in `<main>'
+E, [2016-12-12T15:41:23.297242 #2950] ERROR -- Kitchen: ----End Backtrace-----

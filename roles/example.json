@@ -4,10 +4,12 @@
     "chef_type": "role",
     "json_class": "Chef::Role",
     "default_attributes": {
+    "test": "role" 
     },
     "override_attributes": {
+    "test": "override-role"
     },
     "run_list": [
-        "recipe[example]"
+        "recipe[c::default]"
     ]
 }
