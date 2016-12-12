@@ -1,8 +1,38 @@
 {
   "id": "user",
-  "name": {
-    "encrypted_data": "yGvLzD0XVxMagTlGrU1zsSbA5nkA9JimghFhurFQgZM=\n",
-    "iv": "Ds0XjZo5k4iYi3hnfmhpPg==\n",
+  "uname": {
+    "encrypted_data": "6HLAtCy5DEK0VRTj0brfe+YxcjMQV/7Iymq7E7iymh4=\n",
+    "iv": "xdCT/QpQdj4Jb9biKqixuQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "uid": {
+    "encrypted_data": "SRT0ky0H26ZmoS9ov3KHQRejZJiV0Uy1pINhGhSgSws=\n",
+    "iv": "q00pS75IFIJvsIyvTLHLWA==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "password": {
+    "encrypted_data": "w5NM4BHGvUPAfYDtAmKa2xhSh4SqY4u+M+QMUgWGarWkCYBCvYlf/58pZqKv\nv7keO4sQ5JUEsmnZTFbCNeujSV+o2/8/7coJQPICoQvyHUO2R4c82l1acm8M\nMeTrutNqCHDttZlqQe7wfIz4T+7NukxLELxjPaVAFvY67hLpi30=\n",
+    "iv": "pqGb9hKjFecqFUDSz+/RZw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "home": {
+    "encrypted_data": "cneAocu00BptNpVa6LKSmn6LP/9H4j4YV+g9YrB4SiM=\n",
+    "iv": "qT2XZHvxSaR9O6k5ctKujA==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "shell": {
+    "encrypted_data": "L/pE6Oftv28gDIIqGzjjb0kHDyzRMTHXJ8HISM/o5Xg=\n",
+    "iv": "73Zn9czjIboP6vwVcKcj3Q==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "gname": {
+    "encrypted_data": "0jLbxecxF+mNre4s/zwkXw2L5JOyPgVFC034LoZp11o=\n",
+    "iv": "oIPYobnTYrwfITZIbq87UQ==\n",
     "version": 1,
     "cipher": "aes-256-cbc"
   }
